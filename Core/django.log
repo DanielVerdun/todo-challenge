@@ -9,3 +9,19 @@
 2024-01-19 11:17:02,206 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 1723
 2024-01-19 11:17:29,809 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "DELETE /api/v1.0/tasks/13/ HTTP/1.1" 204 0
 2024-01-19 11:17:44,314 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 1590
+2024-01-19 17:16:31,860 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:16:31,864 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/1/
+2024-01-19 17:16:31,868 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:16:31,873 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/1/
+2024-01-19 17:18:54,012 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:18:54,015 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/1/
+2024-01-19 17:18:54,018 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:23:23,676 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-19 17:24:10,580 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:24:10,585 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/1/
+2024-01-19 17:24:10,588 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:28:50,156 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-19 17:28:59,082 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:28:59,085 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/1/
+2024-01-19 17:28:59,090 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/
+2024-01-19 17:28:59,094 - MainThread - MainProcess - django.request - WARNING - Not Found: /api/tasks/1/
