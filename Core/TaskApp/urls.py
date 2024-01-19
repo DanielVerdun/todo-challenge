@@ -12,7 +12,7 @@ urlpatterns = [
 
 # En este archivo es indispensable importar la siguientes librerias
 from rest_framework import routers
-from .viewsets import TaskViewSet
+from TaskApp.viewsets import TaskViewSet
 
 router = routers.SimpleRouter() # Define las rutas para nuestro modelo. GET,POST,PUT,DELETE
 router.register('tasks', TaskViewSet) # registramos la url y recibe el ViewSet como segundo parámetro

@@ -22,3 +22,4 @@ class TaskSerializer(serializers.ModelSerializer):
         fields = '__all__'# Nombre de los campos que utilizaremos del modelo mencionado. (En este caso usaremos todos)
 
         # Luego lo siguiente que haremos, es crear el archivo viewsets.py
+
