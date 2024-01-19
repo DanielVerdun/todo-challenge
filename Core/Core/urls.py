@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('api/', include('TaskApp.urls')),
     path('api/v1.0/', include('TaskApp.urls')), # es una buena práctica definir una vesión para nuestra api
+    
 ]

@@ -1,0 +1,11 @@
+2024-01-19 11:13:32,807 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-19 11:13:54,311 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-19 11:14:30,012 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-19 11:14:39,995 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "PUT /api/v1.0/tasks/13/ HTTP/1.1" 200 132
+2024-01-19 11:15:49,873 - MainThread - MainProcess - django.utils.autoreload - INFO - /home/dverdun/Documentos/Programacion_python/Prueba_tecnica/ToDo-Challenge-invera/todo-challenge/Core/TaskApp/viewsets.py changed, reloading.
+2024-01-19 11:15:50,494 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-19 11:16:23,120 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "POST /api/v1.0/tasks/ HTTP/1.1" 201 132
+2024-01-19 11:16:52,951 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "DELETE /api/v1.0/tasks/14/ HTTP/1.1" 204 0
+2024-01-19 11:17:02,206 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 1723
+2024-01-19 11:17:29,809 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "DELETE /api/v1.0/tasks/13/ HTTP/1.1" 204 0
+2024-01-19 11:17:44,314 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 1590

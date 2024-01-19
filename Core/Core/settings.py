@@ -132,3 +132,29 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
     ],
 }
+# Agregamos configuracion para Logs
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'django.log',
+            'formatter': 'custom',
+        },
+        
+    },
+    'formatters': {
+        'custom': {
+            'format': '%(asctime)s - %(threadName)s - %(processName)s - %(name)s - %(levelname)s - %(message)s',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
