@@ -10,10 +10,12 @@ class TaskSerializer(serializers.ModelSerializer):
         fields = ['title', 'description', 'completed', 'created_at']
 
 """
-# importamos de la rest_framework la libreria serializers
+# Importamos de la rest_framework la libreria serializers
 from dataclasses import field
 from rest_framework import serializers
 from .models import Task
+# Importamos para manejar los token
+from rest_framework.authtoken.models import Token
 
 # Definimos la una class que serialize nuestro models
 class TaskSerializer(serializers.ModelSerializer):
@@ -23,3 +25,7 @@ class TaskSerializer(serializers.ModelSerializer):
 
         # Luego lo siguiente que haremos, es crear el archivo viewsets.py
 
+class TokenSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Token
+        fields = ('key', 'user', 'created')
