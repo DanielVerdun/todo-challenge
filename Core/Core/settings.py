@@ -163,7 +163,3 @@ LOGGING = {
 # Custom user model - authentication
 AUTH_USER_MODEL = "users.User"
 
-# Esquema para ducumentar api
-REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-}
