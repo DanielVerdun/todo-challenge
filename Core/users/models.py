@@ -7,7 +7,10 @@ from django.contrib.auth.models import (
 
 # Create your models here.
 
+"""
+    Creamos class UserManager para administrar los usuarios
 
+"""
 class UserManager(BaseUserManager):
 
     def create_user(self, email, password, **extra_fields):
@@ -29,6 +32,9 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
+    """
+        Creamos class User. Trabaja con los usuarios autenticados
+    """
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=255)
     is_staff = models.BooleanField(default=False)

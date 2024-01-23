@@ -1141,3 +1141,45 @@ RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash an
 2024-01-21 11:38:17,926 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
 2024-01-21 11:48:27,158 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
 2024-01-21 11:48:33,811 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "POST /api/v1.0/tasks/ HTTP/1.1" 201 130
+2024-01-22 19:08:28,793 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-22 19:08:33,650 - Thread-1 (process_request_thread) - MainProcess - django.request - WARNING - Not Found: /
+2024-01-22 19:08:33,651 - Thread-1 (process_request_thread) - MainProcess - django.server - WARNING - "GET / HTTP/1.1" 404 2290
+2024-01-22 19:08:33,746 - Thread-1 (process_request_thread) - MainProcess - django.request - WARNING - Not Found: /favicon.ico
+2024-01-22 19:08:33,747 - Thread-1 (process_request_thread) - MainProcess - django.server - WARNING - "GET /favicon.ico HTTP/1.1" 404 2341
+2024-01-22 19:08:42,744 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /admin/ HTTP/1.1" 200 6459
+2024-01-22 19:08:42,761 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-01-22 19:08:42,763 - Thread-2 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2024-01-22 19:08:42,765 - Thread-3 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2024-01-22 19:08:42,768 - Thread-4 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2024-01-22 19:08:42,771 - Thread-5 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2024-01-22 19:08:42,774 - Thread-4 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2024-01-22 19:08:42,775 - Thread-3 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2024-01-22 19:08:42,812 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2024-01-22 19:08:42,813 - Thread-5 (process_request_thread) - MainProcess - django.server - INFO - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2024-01-22 19:10:10,641 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "POST /api/v1.0/authentication/token/ HTTP/1.1" 200 52
+2024-01-22 19:10:42,922 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 393
+2024-01-22 19:12:23,480 - Thread-6 (process_request_thread) - MainProcess - django.request - WARNING - Unauthorized: /api/v1.0/tasks/
+2024-01-22 19:12:23,481 - Thread-6 (process_request_thread) - MainProcess - django.server - WARNING - "GET /api/v1.0/tasks/?2024-01-21T11:16:02.831313Z HTTP/1.1" 401 58
+2024-01-22 22:42:47,187 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/?created_at=2024-01-21T11:16:02.831313Z HTTP/1.1" 200 393
+2024-01-22 22:43:10,956 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/?created_at=2024-01-21T11:17:09.757731Z HTTP/1.1" 200 393
+2024-01-22 22:43:31,052 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/?created_at=2024-01-21T11:17:09.757731Z HTTP/1.1" 200 393
+2024-01-22 22:43:48,271 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 393
+2024-01-22 22:45:36,145 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/?created_at=2024-01-21T11:17:09.757731Z HTTP/1.1" 200 393
+2024-01-22 22:45:54,218 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/?created_at=%222024-01-21T11:17:09.757731Z%22 HTTP/1.1" 200 393
+2024-01-22 22:46:02,608 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/?created_at=%222024-01-21T11:17:09.757731Z%22 HTTP/1.1" 200 393
+2024-01-22 22:48:23,050 - Thread-6 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/?created_at__gte=2022-01-01&created_at__lte=2022-01-31&content__icontains=example HTTP/1.1" 200 393
+2024-01-22 22:52:59,717 - MainThread - MainProcess - django.utils.autoreload - INFO - /home/dverdun/Documentos/Programacion_python/Prueba_tecnica/ToDo-Challenge-invera/todo-challenge/Core/TaskApp/filters.py changed, reloading.
+2024-01-22 22:53:00,318 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-22 23:04:20,074 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-22 23:04:26,724 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 393
+2024-01-23 00:05:36,974 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-23 00:06:12,381 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 393
+2024-01-23 00:06:31,489 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "POST /api/v1.0/tasks/ HTTP/1.1" 201 122
+2024-01-23 00:06:36,894 - Thread-1 (process_request_thread) - MainProcess - django.server - INFO - "GET /api/v1.0/tasks/ HTTP/1.1" 200 516
+2024-01-23 00:09:27,518 - MainThread - MainProcess - django.utils.autoreload - INFO - /home/dverdun/Documentos/Programacion_python/Prueba_tecnica/ToDo-Challenge-invera/todo-challenge/Core/users/models.py changed, reloading.
+2024-01-23 00:09:28,042 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-23 00:11:04,052 - MainThread - MainProcess - django.utils.autoreload - INFO - /home/dverdun/Documentos/Programacion_python/Prueba_tecnica/ToDo-Challenge-invera/todo-challenge/Core/users/serializers.py changed, reloading.
+2024-01-23 00:11:04,707 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-23 00:14:58,069 - MainThread - MainProcess - django.utils.autoreload - INFO - /home/dverdun/Documentos/Programacion_python/Prueba_tecnica/ToDo-Challenge-invera/todo-challenge/Core/users/urls.py changed, reloading.
+2024-01-23 00:14:58,615 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-01-23 00:15:44,328 - MainThread - MainProcess - django.utils.autoreload - INFO - Watching for file changes with StatReloader

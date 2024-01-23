@@ -1,5 +1,5 @@
 from rest_framework import generics, authentication, permissions
-#from users.models import User # importamos model
+from users.models import User # importamos model
 from users.serializers import UserSerializer, AuthTokenSerializer# importamos serializer
 
 from rest_framework.authtoken.views import ObtainAuthToken # importamos para autenticar

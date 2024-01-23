@@ -2,9 +2,9 @@
 # Importamos libreirias para necesarias para realizar los test
 # ------------------------------------------------------------
 from django.test import TestCase, RequestFactory
-from .models import Task # Importamos models para realizar pruebas 
+from .models import Task # Importamos models para realizar pruebas
 from django.utils import timezone
-from .serializers import TaskSerializer # Importamos serializers para realizar pruebas 
+from .serializers import TaskSerializer # Importamos serializers para realizar pruebas
 
 # Importamos para realizar pruebas a la viewset TaskViewSet
 from rest_framework.test import APIClient 
@@ -107,7 +107,7 @@ class TaskSerializerTestCase(TestCase):
 # Ralizamos pruebas unitarias al viewset TaskViewSet
 #----------------------------------------------------------------------
 
-# Estoy tests fallan, por que no se obtiene el status code esperado.
+# Estos tests fallan por que no se obtiene el status code esperado.(En desarrollo)
 
 """
 class TaskViewSetTestCase(TestCase):
@@ -133,7 +133,7 @@ class TaskViewSetTestCase(TestCase):
         response = self.client.post('/api/tasks/', data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Task.objects.filter(title='Tarea 1').count(), 1)
-    
+
     def test_update_task(self):
         # Verificar que se puede actualizar una tarea existente
         data = {'title': 'Tarea 1', 'description': 'Descripción de la tarea 1', 'completed': True}
@@ -143,7 +143,7 @@ class TaskViewSetTestCase(TestCase):
         self.assertEqual(self.task.title, 'Tarea 1')
         self.assertEqual(self.task.description, 'Descripción de la tarea 1')
         self.assertTrue(self.task.completed)
-    
+
     def test_delete_task(self):
         # Verificar que se puede eliminar una tarea existente
         response = self.client.delete(f'/api/tasks/{self.task.id}/')

@@ -2,7 +2,9 @@
 from django.contrib.auth import get_user_model, authenticate
 from rest_framework import serializers
 
-
+"""
+    UserSerializer es la class que se encargará de serializar nuestro moldels User
+"""
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
