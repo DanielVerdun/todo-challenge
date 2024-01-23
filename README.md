@@ -119,10 +119,10 @@ Algunas de las pautas de PEP 8 que son relevantes para el desarrollo en Django i
 	solicitar token: http://127.0.0.1:8000/api/v1.0/authentication/token/
 	
 	Parámetros de entrada: 
-		{
-		"email":"usertest@gmail.com",
-		"password": "123456"
-		}
+			{
+			"email":"usertest@gmail.com",
+			"password": "123456"
+			}
 	
 	Parámetros de salida si esta autenticado:
 		{
