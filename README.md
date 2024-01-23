@@ -118,35 +118,42 @@ Algunas de las pautas de PEP 8 que son relevantes para el desarrollo en Django i
 
 	solicitar token: http://127.0.0.1:8000/api/v1.0/authentication/token/
 	
-	Parámetros de entrada: 
-			{
-			"email":"usertest@gmail.com",
-			"password": "123456"
-			}
+	Parámetros de entrada:
+
+	{
+	"email":"usertest@gmail.com",
+	"password": "123456"
+	}
 	
 	Parámetros de salida si esta autenticado:
-		{
-		"token":"xxxxxxxxxxxxxxxxxxxxx"
-		
-		}
+
+ 	{
+	"token":"xxxxxxxxxxxxxxxxxxxxx"
 	
+	}
+
 	
 	Parámetros de salida si no esta autenticado:
-		{
-		"detail": "Authentication credentials were not provided."
-		
-		}
+	
+ 	{
+	"detail": "Authentication credentials were not provided."
+	
+	}
 	
 	Para autenticar debemos pasar el token por headers al realizar el request.
 
 3. Una ves que estamos autenticados podremos acceder a todos los endpoint de la app:
 
-	Obtener lista de tareas: http://127.0.0.1:8000/api/v1.0/tasks/  "GET"
+	Obtener lista de tareas:
+		http://127.0.0.1:8000/api/v1.0/tasks/  "GET"
 
 
-4. Crear una tarea: http://127.0.0.1:8000/api/v1.0/tasks/   "POST"
+4. Crear una tarea:
+   
+   	http://127.0.0.1:8000/api/v1.0/tasks/   "POST"
 
-	Ejemplo de parámetros de entrada: 
+	Ejemplo de parámetros de entrada:
+
 		{
 		"title": "Tarea 4",
 		"description": "Descripción de la tarea 4",
@@ -154,20 +161,25 @@ Algunas de las pautas de PEP 8 que son relevantes para el desarrollo en Django i
 		}
 	
 	
-	5. Actualizar una tarea: http://127.0.0.1:8000/api/v1.0/tasks/{id} "PUT"
+5. Actualizar una tarea:
+   
+	http://127.0.0.1:8000/api/v1.0/tasks/{id} "PUT"
 	
-	Ejemplo de parámetros de entrada: 
+	Ejemplo de parámetros de entrada:
+
 		{
 		"title": "Tarea 4",
 		"description": "Descripción de la tarea 4",
 		"completed": true
 		}
 
-5. Eliminar una tarea :
+6. Eliminar una tarea :
+   
    	http://127.0.0.1:8000/api/v1.0/tasks/{id} "DELETE"
 
 
-6. Filtrar por fecha y contenido de la tarea:
+7. Filtrar por fecha y contenido de la tarea:
+    
 	http://127.0.0.1:8000/api/v1.0/tasks/?created_at__gte=2022-01-01&created_at__lte=2022-01-31&content__icontains=Probando_filtro
  
 	
