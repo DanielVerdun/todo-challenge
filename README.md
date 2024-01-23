@@ -105,69 +105,69 @@ Algunas de las pautas de PEP 8 que son relevantes para el desarrollo en Django i
 
 ## Uso:
 
-  1. Ejecutar server: python3 manage.py runserver
+1. Ejecutar server: python3 manage.py runserver
 
-  La aplicación cuenta con un panel de administración donde se pueden administrar los usuarios autorizados y sus token. 
-  http://127.0.0.1:8000/admin/
-  Al momento del desarrollo, creamos un usaurio para poder testear la funcionalidad.
+La aplicación cuenta con un panel de administración donde se pueden administrar los usuarios autorizados y sus token. 
+http://127.0.0.1:8000/admin/
+Al momento del desarrollo, creamos un usaurio para poder testear la funcionalidad.
 
-  email: usertest@gmail.com
-  password: 123456
+email: usertest@gmail.com
+password: 123456
 
-  2. Para acceder a los endpoint de la aplicación debemos autenticarlos al siguiente url:
-  
-  solicitar token: http://127.0.0.1:8000/api/v1.0/authentication/token/
-  
-  Parámetros de entrada: 
-  {
-        "email":"usertest@gmail.com",
-        "password": "123456"
-  }
-  
-  Parámetros de salida si esta autenticado:
-  {
-    "token":"xxxxxxxxxxxxxxxxxxxxx"
-  
-  }
-  
-  
-  Parámetros de salida si no esta autenticado:
-  {
-     "detail": "Authentication credentials were not provided."
-  
-  }
-  
-  Para autenticar debemos pasar las credenciales de usuario por body y el token por headers.
+2. Para acceder a los endpoint de la aplicación debemos autenticarlos al siguiente url:
 
-  3. Una ves que estamos autenticados podremos acceder a todos los endpoint de la app:
-  
-  Obtener lista de tareas: http://127.0.0.1:8000/api/v1.0/tasks/  "GET"
-  
-  
-  4. Crear una tarea: http://127.0.0.1:8000/api/v1.0/tasks/   "POST"
-  
-  Ejemplo de parámetros de entrada: 
-  {
-      "title": "Tarea 4",
-      "description": "Descripción de la tarea 4",
-      "completed": false
-  }
+solicitar token: http://127.0.0.1:8000/api/v1.0/authentication/token/
+
+Parámetros de entrada: 
+{
+"email":"usertest@gmail.com",
+"password": "123456"
+}
+
+Parámetros de salida si esta autenticado:
+{
+"token":"xxxxxxxxxxxxxxxxxxxxx"
+
+}
 
 
-  5. Actualizar una tarea: http://127.0.0.1:8000/api/v1.0/tasks/{id} "PUT"
-  
-  Ejemplo de parámetros de entrada: 
-  {
-      "title": "Tarea 4",
-      "description": "Descripción de la tarea 4",
-      "completed": true
-  }
-  
-  6. Eliminar una tarea : http://127.0.0.1:8000/api/v1.0/tasks/{id} "DELETE"
-  
-  
-  7. Filtrar por fecha y contenido de la tarea:
-  http://127.0.0.1:8000/api/v1.0/tasks/?created_at__gte=2022-01-01&created_at__lte=2022-01-31&content__icontains=Probando_filtro
+Parámetros de salida si no esta autenticado:
+{
+"detail": "Authentication credentials were not provided."
+
+}
+
+Para autenticar debemos pasar las credenciales de usuario por body y el token por headers.
+
+3. Una ves que estamos autenticados podremos acceder a todos los endpoint de la app:
+
+Obtener lista de tareas: http://127.0.0.1:8000/api/v1.0/tasks/  "GET"
+
+
+4. Crear una tarea: http://127.0.0.1:8000/api/v1.0/tasks/   "POST"
+
+Ejemplo de parámetros de entrada: 
+{
+"title": "Tarea 4",
+"description": "Descripción de la tarea 4",
+"completed": false
+}
+
+
+5. Actualizar una tarea: http://127.0.0.1:8000/api/v1.0/tasks/{id} "PUT"
+
+Ejemplo de parámetros de entrada: 
+{
+"title": "Tarea 4",
+"description": "Descripción de la tarea 4",
+"completed": true
+}
+
+6. Eliminar una tarea : http://127.0.0.1:8000/api/v1.0/tasks/{id} "DELETE"
+
+
+7. Filtrar por fecha y contenido de la tarea:
+http://127.0.0.1:8000/api/v1.0/tasks/?created_at__gte=2022-01-01&created_at__lte=2022-01-31&content__icontains=Probando_filtro
  
 	
 Disponibilidad para realizar una pequeña demo del proyecto al finalizar el challenge. (Se ha notificado por mail)
