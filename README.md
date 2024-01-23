@@ -107,12 +107,12 @@ Algunas de las pautas de PEP 8 que son relevantes para el desarrollo en Django i
 
 1. Ejecutar server: python3 manage.py runserver
 
-La aplicación cuenta con un panel de administración donde se pueden administrar los usuarios autorizados y sus token. 
-http://127.0.0.1:8000/admin/
-Al momento del desarrollo, creamos un usaurio para poder testear la funcionalidad.
-
-email: usertest@gmail.com
-password: 123456
+	La aplicación cuenta con un panel de administración donde se pueden administrar los usuarios autorizados y sus token. 
+	http://127.0.0.1:8000/admin/
+	Al momento del desarrollo, creamos un usaurio para poder testear la funcionalidad.
+	
+	email: usertest@gmail.com
+	password: 123456
 
 2. Para acceder a los endpoint de la aplicación debemos autenticarlos al siguiente url:
 
