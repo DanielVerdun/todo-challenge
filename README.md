@@ -111,36 +111,37 @@ Algunas de las pautas de PEP 8 que son relevantes para el desarrollo en Django i
 	http://127.0.0.1:8000/admin/
 	Al momento del desarrollo, creamos un usaurio para poder testear la funcionalidad.
 	
-	email: usertest@gmail.com
-	password: 123456
+		email: usertest@gmail.com
+		password: 123456
 
 2. Para acceder a los endpoint de la aplicación debemos autenticarlos al siguiente url:
 
-	solicitar token: http://127.0.0.1:8000/api/v1.0/authentication/token/
+	solicitar token:
+		http://127.0.0.1:8000/api/v1.0/authentication/token/
 	
 	Parámetros de entrada:
 
-	{
-	"email":"usertest@gmail.com",
-	"password": "123456"
-	}
+		{
+		"email":"usertest@gmail.com",
+		"password": "123456"
+		}
 	
 	Parámetros de salida si esta autenticado:
 
- 	{
-	"token":"xxxxxxxxxxxxxxxxxxxxx"
-	
-	}
+	 	{
+		"token":"xxxxxxxxxxxxxxxxxxxxx"
+		
+		}
 
 	
 	Parámetros de salida si no esta autenticado:
 	
- 	{
-	"detail": "Authentication credentials were not provided."
-	
-	}
-	
-	Para autenticar debemos pasar el token por headers al realizar el request.
+	 	{
+		"detail": "Authentication credentials were not provided."
+		
+		}
+		
+	Para autenticar debemos pasar el token por headers al realizar request.
 
 3. Una ves que estamos autenticados podremos acceder a todos los endpoint de la app:
 
@@ -180,7 +181,8 @@ Algunas de las pautas de PEP 8 que son relevantes para el desarrollo en Django i
 
 7. Filtrar por fecha y contenido de la tarea:
     
-	http://127.0.0.1:8000/api/v1.0/tasks/?created_at__gte=2022-01-01&created_at__lte=2022-01-31&content__icontains=Probando_filtro
+	http://127.0.0.1:8000/api/v1.0/tasks/?created_at__gte=2022-01-01&created_at__lte=2022-01-31&content__icontains=Probando_filtro "GET"
+
  
 	
 Disponibilidad para realizar una pequeña demo del proyecto al finalizar el challenge. (Se ha notificado por mail)
