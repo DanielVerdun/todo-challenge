@@ -28,6 +28,8 @@ Si aún no lo has hecho, clona el repositorio:
 
     git checkout develop
 
+    cd core
+
 ### 4. Configuración del Entorno (.env)
 
 Crea un archivo .env en la raíz del proyecto. Este archivo contendrá las variables de entorno necesarias para la base de datos y la aplicación. Puedes usar el siguiente ejemplo como base:
