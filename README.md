@@ -129,10 +129,29 @@ Deberías obtener una respuesta exitosa con los datos de las tareas.
 ## 📸 Evidencias de Funcionamiento
 A continuación, se presentan algunas capturas de pantalla para demostrar el correcto funcionamiento de la solución.(Puedes usar estos datos para test)
 
-### Obtener token de autenticacion:
+### Obtener token de autenticacion para un Usuario:
 
 POST: http://127.0.0.1:8000/api/v1.0/authentication/token/
 <img width="1005" height="356" alt="image" src="https://github.com/user-attachments/assets/0ce5590f-bda3-474c-8491-a73c2961e645" />
+
+### List Task:
+
+GET: http://127.0.0.1:8000/api/v1.0/tasks/
+<img width="1476" height="841" alt="image" src="https://github.com/user-attachments/assets/e697fdc0-efa0-4a0e-b8ad-9f663ede28f0" />
+
+### Create Task:
+
+POST: http://127.0.0.1:8000/api/v1.0/tasks/
+<img width="1007" height="478" alt="image" src="https://github.com/user-attachments/assets/ffb4753f-81d8-4cf9-89a2-a53ea898e0c9" />
+
+### Update Task:
+
+PUT: http://127.0.0.1:8000/api/v1.0/tasks/{id}/
+<img width="1007" height="486" alt="image" src="https://github.com/user-attachments/assets/25398deb-678f-453e-9be3-842e3c040b28" />
+
+### Delete Task
+DELETE: http://127.0.0.1:8000/api/v1.0/tasks/{id}/
+<img width="1013" height="388" alt="image" src="https://github.com/user-attachments/assets/85edc5d8-f652-47f2-bc1a-fee4208b9cce" />
 
 
   
