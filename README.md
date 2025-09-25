@@ -27,7 +27,6 @@ Si aún no lo has hecho, clona el repositorio:
 
 
     git checkout develop
-
     cd core
 
 ### 4. Configuración del Entorno (.env)
