@@ -20,8 +20,8 @@ Asegúrate de tener instalado lo siguiente:
 Si aún no lo has hecho, clona el repositorio:
 
 
-    git clone <URL_DE_TU_FORK>
-    cd <nombre_de_tu_repositorio>
+    git clone https://github.com/DanielVerdun/todo-challenge.git
+    cd todo-challenge 
 
 ### 3. Cambiar a la Rama de Desarrollo
 
